@@ -14,6 +14,8 @@ output, ruby, section, summary,time, mark, audio, video {
 
 body, html {
   height: 100%;
+  background:#fff;
+  color: #1c1c1c;
 }
  
 img,fieldset, a img {
@@ -85,7 +87,10 @@ a{
     text-decoration: none;
   }
 }
-
+b, strong{
+  font-weight: normal;
+  font-family: $medium;
+}
 h1,h2,h3,h4,h5,h6{color:inherit;font-weight:normal;}
 h1{font-size:24px;}
 h2{font-size:22px;}
@@ -143,12 +148,11 @@ textarea{
 //main containers
 .wrapper{
 @include povh('');
-margin:0 auto;
-width:1000px;
+min-width:1160px;
 }
 
 .container{
-width:1000px;
+width:1160px;
 margin:0 auto;
 @include povh('');
 }
