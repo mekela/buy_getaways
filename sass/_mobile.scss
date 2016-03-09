@@ -2,16 +2,40 @@
 // You can read about usage in https://github.com/paranoida/sass-mediaqueries 
 
 //styles for custom device width
-@include mq($max-width: 1000px) {
-  
+@include mq($max-width: 1160px) {
+	.container{
+		width:auto;
+		padding: 0 10px;
+	}	
+	.big_slogan{
+		height: auto;
+		background-size: cover;
+		article{
+			display: block;
+			height: auto;
+			width: auto;
+			padding: 30px 0;
+		}
+	}
 }
 
-//styles for ipad
-@include ipad {
-	
-}
-
-//styles for iphone
-@include iphone5 {
-
-} 
+@include mq($max-width: 800px) {
+	.center_form input{
+		width: 100%;
+	}
+	.tag_wrap figure{
+		display: block;
+		width: 100%;
+		text-align: center;
+		@include povh('');
+		padding-bottom: 30px;
+		img{
+			float: none;
+		}
+	}
+	.d_list dl{
+		display: block;
+		float: none;
+		width: 100%;
+	}
+}	
