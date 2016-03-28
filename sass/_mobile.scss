@@ -17,6 +17,64 @@
 			padding: 30px 0;
 		}
 	}
+
+		.what_we_do_row{
+			figure{
+				text-align: left;
+				margin: 13px 0px 0 40px;
+				figcaption{
+					text-align: center;
+				}
+			}
+			&:nth-child(2n){
+				figure{
+					float: right;
+					margin: 13px 0px 0 40px;
+				}
+			}
+			&:nth-child(3){
+				height: 400px;
+				figure{
+					margin: 13px 0px 0 40px;
+				}
+			}
+			&:nth-child(4){
+				height: 397px;
+				figure{
+					margin: 13px 0px 0 40px;
+					&:first-child{
+						margin: 13px 0px 0 40px;
+					}
+				}
+			}
+			&:nth-child(5){
+				figure{
+					margin: 13px 0px 0 40px;
+				}
+			}
+		}
+
+
+}
+
+@include mq($max-width: 910px) {
+	.what_we_do_block, .what_we_do_row{
+		height: auto !important;
+		background: none;
+	}
+	.what_we_do_wrap{
+		height: auto;
+		@include linear-gradient(#e4ebef, #f0f5f8)
+	}
+		.what_we_do_row {
+			figure{
+				display: block;
+				width: 100%;
+				text-align: center;
+				float: none !important;
+				margin: 0 0 40px 0!important;
+			}
+		}
 }
 
 @include mq($max-width: 800px) {
